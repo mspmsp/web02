@@ -76,6 +76,20 @@
                 Address:
                 <textarea id="address"></textarea>
             </p>
+            <p>
+                Birth Date:
+                <input type="date" />
+            </p>
+            <!--suggestion list-->
+            <p>
+                Skills:
+                <datalist id="skills">
+                    <option>Office</option>
+                    <option>Sql</option>
+                    <option>VS</option>
+                </datalist>
+                <input type="text" list="skills" />
+            </p>
             <button onclick="save();" type="submit">Save</button>
         </fieldset>
     </form>
