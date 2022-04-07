@@ -38,6 +38,11 @@
 
 
         }
+        function pass() {
+            var s = Math.floor(Math.random() * 5);
+            var score = document.getElementById("score");
+            score.value = s;
+        }
     </script>
 </head>
 <body>
@@ -89,6 +94,14 @@
                     <option>VS</option>
                 </datalist>
                 <input type="text" list="skills" />
+            </p>
+            <p>
+                <input type="number" min="10" max="35" />
+            </p>
+            <p>
+                Password:
+                <input type="password" onkeypress="pass();" />
+                <meter min="1" max="5" value="0" id="score"></meter>
             </p>
             <button onclick="save();" type="submit">Save</button>
         </fieldset>
