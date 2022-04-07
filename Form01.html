@@ -2,9 +2,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Form01</title>
+    <script></script>
 </head>
 <body>
-
+    <fieldset>
+        <legend>Profile Information</legend>
+        <p>
+            First Name :
+            <input type="text" />
+        </p>
+        <p>
+            Last Name :
+            <input type="text" />
+        </p>
+        <p>
+            <input type="checkbox" id="married" />
+            <label for="married">Married?</label>
+        </p>
+        <p>
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="female">FeMale</label>
+        </p>
+        <p>
+            Job:
+            <select>
+                <option>Select...</option>
+                <option value="1">Developer</option>
+                <option value="2">Admin</option>
+                <option value="3">Tester</option>
+                <option value="4">Designer</option>
+            </select>
+        </p>
+        <button>Save</button>
+    </fieldset>
 
 </body>
 </html>
