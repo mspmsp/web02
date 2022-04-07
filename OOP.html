@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>OOP</title>
+    <script>
+        //classification-کلاسه بندی
+
+        var person = function () {
+
+            //public property
+            this.firstName = "";
+            this.lastName = "";
+
+            //private property
+            var age = 0;
+
+
+            //public method
+            this.getfullName = function () {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+
+        //instantination-نمونه سازی
+        var p1 = new person;
+        p1.constructor = "ali";
+        p1.lastName = "rezaei";
+
+
+        //class constructor
+        var student = function (fn, ln) {
+
+            //public property
+            this.firstName = fn
+            this.lastName = ln
+
+
+        }
+
+        var s1 = new student("st1", "st2");
+        console.log(s1.firstName);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
