@@ -1,1 +1,5 @@
 D:\Z_myProjects\web\web02\web02\obj\Debug\web02.csprojResolveAssemblyReference.cache
+D:\Z_myProjects\web\web02\web02\bin\web02.dll
+D:\Z_myProjects\web\web02\web02\bin\web02.pdb
+D:\Z_myProjects\web\web02\web02\obj\Debug\web02.dll
+D:\Z_myProjects\web\web02\web02\obj\Debug\web02.pdb
