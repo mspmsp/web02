@@ -2,18 +2,56 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Form01</title>
-    <script></script>
+    <script>
+
+        function save() {
+            //DOM  (Document Object Model) : document , window
+            //DOM Query , JavaScript Query
+            var firstName = document.getElementById("firstName");
+            //console.log(firstName.value);
+            var lastName = document.getElementById("lastName");
+            //console.log(lastName.value);
+            var married = document.getElementById("married");
+            //console.log(married.checked);
+            var male = document.getElementById("male");
+            //console.log(male.checked);
+            var female = document.getElementById("female");
+            //console.log(female.checked);
+            var job = document.getElementById("job");
+            //console.log(job.selectedIndex);
+            //console.log(job.options[job.selectedIndex].text);
+            //console.log(job.options[job.selectedIndex].value);
+            var address = document.getElementById("address");
+            //console.log(address.selectedIndex);
+
+            //create by jason
+            var profile = {
+                firstName: firstName.value,
+                lastName: lastName.value,
+                married: married.checked,
+                gender: male.checked,
+                job: job.options[job.selectedIndex].value,
+                address: address.value
+            };
+            console.log(profile);
+
+            //send to server : AJAX , ODATA , WebSocket
+
+
+        }
+
+    </script>
 </head>
 <body>
     <fieldset>
         <legend>Profile Information</legend>
         <p>
             First Name :
-            <input type="text" />
+            <input type="text" id="firstName" />
         </p>
         <p>
             Last Name :
-            <input type="text" />
+            <input type="text" id="lastName" />
         </p>
         <p>
             <input type="checkbox" id="married" />
@@ -27,15 +65,19 @@
         </p>
         <p>
             Job:
-            <select>
-                <option>Select...</option>
+            <select id="job">
+                <option value="0">Select...</option>
                 <option value="1">Developer</option>
                 <option value="2">Admin</option>
                 <option value="3">Tester</option>
                 <option value="4">Designer</option>
             </select>
         </p>
-        <button>Save</button>
+        <p>
+            Address:
+            <textarea id="address"></textarea>
+        </p>
+        <button onclick="save();">Save</button>
     </fieldset>
 
 </body>
